@@ -7,7 +7,7 @@ Programming language: **Python**
 | Days        | Challange 1           | Challange 1  |
 | :-------------: |:-------------:| :-----:|
 | 1 | *Completed* | *Completed* |
-| 2 | *Completed* | TODO |
+| 2 | *Completed* | *Completed* |
 | 3 | TODO | TODO |
 | 4 | TODO | TODO |
 | 5 | TODO | TODO |

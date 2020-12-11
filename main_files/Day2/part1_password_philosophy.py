@@ -31,7 +31,7 @@ def make_dict_from_file(file_name: str) -> dict:
             # print(f"{idx} {line.strip()}")
     return inputs
 
-def calculate(dic: dict):
+def validate_occurencies_number(dic: dict) -> int:
     counter = 0
     for idx, password_dict in dic.items():  # idx is needed for dic keys not to overlap
         password = "".join(password_dict.keys())
@@ -45,7 +45,7 @@ def calculate(dic: dict):
 
 def main():
     passwords = make_dict_from_file('Challange_input.txt')
-    print(calculate(passwords))
+    print(validate_occurencies_number(passwords))
 
 if __name__ == '__main__':
     main()
