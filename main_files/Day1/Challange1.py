@@ -24,7 +24,7 @@
 # # Of course, your expense report is much larger. Find the two entries that sum to 2020; what do you get if you multiply them together?
 
 
-
+# My own solution
 
 def make_list_from_file(file_name: str) -> set:
     inputs = set()
@@ -33,8 +33,8 @@ def make_list_from_file(file_name: str) -> set:
             inputs.add(int(line.strip()))
     return inputs
 
-def calculate():
-    inputs = make_list_from_file('Challange1_input.txt')
+def calculate_two():
+    inputs = make_list_from_file('Challange_input.txt')
     seen = set()
     for element in inputs:
         for current_element in inputs:
@@ -46,7 +46,7 @@ def calculate():
     return 0
 
 def main():
-    value = calculate()
+    value = calculate_two()
     print(value)
 
 if __name__ == '__main__':
