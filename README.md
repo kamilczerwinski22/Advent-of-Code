@@ -4,11 +4,11 @@
 Programming language: **Python**
 
 
-| Days        | Challange 1           | Challange 1  |
+| Days        | Challange 1           | Challange 2  |
 | :-------------: |:-------------:| :-----:|
 | 1 | *Completed* | *Completed* |
 | 2 | *Completed* | *Completed* |
-| 3 | TODO | TODO |
+| 3 | *Completed* | *Completed* |
 | 4 | TODO | TODO |
 | 5 | TODO | TODO |
 | 6 | TODO | TODO |
