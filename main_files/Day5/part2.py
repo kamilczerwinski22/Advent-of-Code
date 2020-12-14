@@ -8,18 +8,7 @@
 # What is the ID of your seat?
 
 
-from part1_binary_boarding import prepare_data
-
-def iteration_seat_calculate(min_value: int, max_value: int, text: str) -> int:
-    for element in text:
-        mid_value = (max_value - min_value + 1) // 2  # mid value is half the current numbers -> 0-127 has 128 numbers
-                                                      # as 0,1,2,3...127 etc.
-        if element in 'BR':  # B and R are for upper half
-            min_value += mid_value
-        else:
-            max_value -= mid_value
-        if (max_value - min_value == 0):  # accumulate in one value
-            return min_value
+from part1_binary_boarding import prepare_data, iteration_seat_calculate
 
 def iteration_seat(row_min: int, row_max: int, col_min: int, col_max: int, data: list) -> list:
     # formula for id is : row * 8 + col
