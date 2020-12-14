@@ -22,6 +22,7 @@ def iteration_seat(row_min: int, row_max: int, col_min: int, col_max: int, data:
 def calculate_your_seat(data_list: list) -> int:
         min_id = min(data_list)
         max_id = max(data_list)
+        # just sum id of all seats, and sum of seats between min and max - your seat id is sub of all id's and data id's
         return sum(range(min_id, max_id + 1)) - sum(data_list)
 
 
