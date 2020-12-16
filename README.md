@@ -11,7 +11,7 @@ Programming language: **Python**
 | 3 | *Completed* | *Completed* |
 | 4 |*Completed* | *Completed* |
 | 5 | *Completed* | *Completed* |
-| 6 | TODO | TODO |
+| 6 | *Completed* | *Completed* |
 | 7 | TODO | TODO |
 | 8 | TODO | TODO |
 | 9 | TODO | TODO |
