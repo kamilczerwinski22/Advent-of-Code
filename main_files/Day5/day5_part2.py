@@ -8,7 +8,8 @@
 # What is the ID of your seat?
 
 
-from part1_binary_boarding import prepare_data, iteration_seat_calculate
+from day5_part1_binary_boarding import prepare_data, iteration_seat_calculate
+
 
 def iteration_seat(row_min: int, row_max: int, col_min: int, col_max: int, data: list) -> list:
     # formula for id is : row * 8 + col
@@ -19,21 +20,24 @@ def iteration_seat(row_min: int, row_max: int, col_min: int, col_max: int, data:
         id_list.append(current_id)
     return id_list
 
+
 def calculate_your_seat(data_list: list) -> int:
-        min_id = min(data_list)
-        max_id = max(data_list)
-        # just sum id of all seats, and sum of seats between min and max - your seat id is sub of all id's and data id's
-        return sum(range(min_id, max_id + 1)) - sum(data_list)
+
+    min_id = min(data_list)
+    max_id = max(data_list)
+    # just sum id of all seats, and sum of seats between min and max - your seat id is sub of all id's and data id's
+    return sum(range(min_id, max_id + 1)) - sum(data_list)
 
 
 def main():
-    data = prepare_data('Challange_input.txt')
+    data = prepare_data('day5_challange_input.txt')
     row_min, row_max = 0, 127
     col_min, col_max = 0, 7
     # Iteration
     iteration_result_list = iteration_seat(row_min, row_max, col_min, col_max, data)
     your_seat = calculate_your_seat(iteration_result_list)
     print(f"Your seat id is: {your_seat}")
+
 
 if __name__ == '__main__':
     main()

@@ -78,7 +78,7 @@ def check_for_presence(data: dict) -> int:
     return valid_counter
 
 def main():
-    data = prepare_data('Challange_input.txt')
+    data = prepare_data('day4_challange_input.txt')
     # obligatory = ('byr','iyr','eyr','hgt','hcl','ecl','pid')
     print(check_for_presence(data))
 

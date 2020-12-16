@@ -12,7 +12,7 @@
 # 2-9 c: ccccccccc is invalid: both position 2 and position 9 contain c.
 # How many passwords are valid according to the new interpretation of the policies?
 
-from part1_password_philosophy import make_dict_from_file
+from day2_part1_password_philosophy import make_dict_from_file
 
 def validate_occurencies_positions(dic: dict) -> int:
     counter = 0
@@ -35,7 +35,7 @@ def validate_occurencies_positions(dic: dict) -> int:
     return counter
 
 def main():
-    passwords = make_dict_from_file('Challange_input.txt')
+    passwords = make_dict_from_file('day2_challange_input.txt')
     print(validate_occurencies_positions(passwords))
 
 if __name__ == '__main__':

@@ -64,7 +64,7 @@
 # Count the number of valid passports - those that have all required fields and valid values. Continue to treat cid as optional. In your batch file, how many passports are valid?
 
 
-from part1_passport_processing import prepare_data
+from day4_part1_passport_processing import prepare_data
 import re
 
 
@@ -112,7 +112,7 @@ def validation(current_dict: dict) -> bool:
     return True
 
 def main():
-    data = prepare_data('Challange_input.txt')
+    data = prepare_data('day4_challange_input.txt')
     result = validation_handler(data)
     print(result)
 

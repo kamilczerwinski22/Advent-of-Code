@@ -5,7 +5,7 @@
 #
 # In your expense report, what is the product of the three entries that sum to 2020?
 
-from Challange1 import make_list_from_file
+from day1_part1_raport_repay import make_list_from_file
 from itertools import combinations
 from functools import reduce
 from operator import mul
@@ -14,7 +14,7 @@ from operator import mul
 
 
 def calculate_three():
-    inputs = make_list_from_file('Challange_input.txt')
+    inputs = make_list_from_file('day1_challange_input.txt')
     for elements in combinations(inputs, 3):
         if sum(elements) == 2020:
             return reduce(mul, elements)

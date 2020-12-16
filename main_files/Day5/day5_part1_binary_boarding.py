@@ -87,7 +87,7 @@ def recursion_seat(row_min: int, row_max: int, col_min: int, col_max: int, data:
 
 
 def main():
-    data = prepare_data('Challange_input.txt')
+    data = prepare_data('day5_challange_input.txt')
 
     row_min, row_max = 0, 127
     col_min, col_max = 0, 7

@@ -15,9 +15,9 @@
 
 def calculate_tree_number(row_jump: int, col_jump: int) -> int:
     tree_counter = 0
-    with open('Challange_input.txt', 'r+', encoding='UTF-8') as f:
+    with open('day3_challange_input.txt', 'r+', encoding='UTF-8') as f:
         max_index = len(f.readline().strip()) - 1
-    with open('Challange_input.txt', 'r+', encoding='UTF-8') as f:
+    with open('day3_challange_input.txt', 'r+', encoding='UTF-8') as f:
         current_col = 0
         for idx, line in enumerate(f):
             if idx % row_jump == 0:
