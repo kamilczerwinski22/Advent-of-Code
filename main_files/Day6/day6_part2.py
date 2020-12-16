@@ -49,7 +49,7 @@ def prepare_data(file_name: str) -> list:
         data_to_return.append(current_ppl_set)  # add last element
     return data_to_return
 
-def calculate_num_of_yes_sec(data):
+def calculate_num_of_yes_sec(data: list) -> int:
     sum_number = 0
     for ppl_set in data:
         counter_ppl_set = [set(x) for x in ppl_set]  # sets for using intersection
