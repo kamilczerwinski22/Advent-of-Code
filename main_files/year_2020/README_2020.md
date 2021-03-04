@@ -1,10 +1,10 @@
-### 2020 Advent Calendar coding challange! 
-*Everyday two new coding challanges until christmas*
+### 2020 Advent Calendar coding challenge! 
+*Everyday two new coding challenges until christmas*
 
 Programming language: **Python**
 
 
-| Days        | Challange 1           | Challange 2  |
+| Days        | Challenge 1           | Challenge 2  |
 | :-------------: |:-------------:| :-----:|
 | 1 | *Completed* | *Completed* |
 | 2 | *Completed* | *Completed* |
@@ -32,4 +32,4 @@ Programming language: **Python**
 | 24 | TODO | TODO |
 | 25 | TODO | TODO |
 
-*Website: https://adventofcode.com/*
+**Website: https://adventofcode.com/2020**
