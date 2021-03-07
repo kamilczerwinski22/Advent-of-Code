@@ -14,7 +14,7 @@ from operator import mul
 
 
 def calculate_three():
-    inputs = make_list_from_file('day1_challange_input.txt')
+    inputs = make_list_from_file('year2020_day1_challenge_input.txt')
     for elements in combinations(inputs, 3):
         if sum(elements) == 2020:
             return reduce(mul, elements)

@@ -35,7 +35,7 @@ def validate_occurencies_positions(dic: dict) -> int:
     return counter
 
 def main():
-    passwords = make_dict_from_file('day2_challange_input.txt')
+    passwords = make_dict_from_file('year2020_day2_challenge_input.txt')
     print(validate_occurencies_positions(passwords))
 
 if __name__ == '__main__':

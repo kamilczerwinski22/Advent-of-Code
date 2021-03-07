@@ -30,7 +30,7 @@ def calculate_your_seat(data_list: list) -> int:
 
 
 def main():
-    data = prepare_data('day5_challange_input.txt')
+    data = prepare_data('year2020_day5_challenge_input.txt')
     row_min, row_max = 0, 127
     col_min, col_max = 0, 7
     # Iteration

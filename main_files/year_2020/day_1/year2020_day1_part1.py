@@ -34,7 +34,7 @@ def make_list_from_file(file_name: str) -> set:
     return inputs
 
 def calculate_two():
-    inputs = make_list_from_file('day1_challange_input.txt')
+    inputs = make_list_from_file('year2020_day1_challenge_input.txt')
     seen = set()
     for element in inputs:
         for current_element in inputs:

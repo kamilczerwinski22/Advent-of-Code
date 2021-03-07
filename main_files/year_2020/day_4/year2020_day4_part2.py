@@ -112,7 +112,7 @@ def validation(current_dict: dict) -> bool:
     return True
 
 def main():
-    data = prepare_data('day4_challange_input.txt')
+    data = prepare_data('year2020_day4_challenge_input.txt')
     result = validation_handler(data)
     print(result)
 

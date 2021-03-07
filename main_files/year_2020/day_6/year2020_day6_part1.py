@@ -62,7 +62,7 @@ def calculate_num_of_yes(data: list) -> int:
     return sum_number
 
 def main():
-    data = prepare_data('day6_challange_input.txt')
+    data = prepare_data('year2020_day6_challenge_input.txt')
     result = calculate_num_of_yes(data)
     print(f"Number of all yes'es is {result}")
 
