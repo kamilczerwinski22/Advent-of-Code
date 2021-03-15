@@ -35,14 +35,20 @@ def find_shortest_route() -> int:
 
     # main logic
     possible_places = set()
-    distances_graph = defaultdict(dict)
+    distances_graph = defaultdict(dict)  # create undirected graph with all the routes
     for route in routes:
         source, _, destination, _, distance = route.split(' ')
         possible_places.add(source)
         possible_places.add(destination)
+
+        # add route distance to the graph (dictionary) from both sides. If connection doesn't exist make it
         distances_graph[source][destination] = int(distance)
         distances_graph[destination][source] = int(distance)
 
+    # create all possible routes using available nodes. Create a list with the sum of the distances between these points
+    # e.g. permutation: ('Straylight', 'AlphaCentauri', 'Norrath', 'Arbre', 'Tristram', 'Faerun', 'Snowdin', 'Tambi')
+    # Is the total distance between 'Straylight' and 'Tambi' going through the nodes in order:
+    # Straylight -> AlphaCentauri -> Norrath -> ... -> Tambi
     distances = []
     for permutation in permutations(possible_places):
         distances.append(sum(map(lambda x, y: distances_graph[x][y], permutation[:-1], permutation[1:])))
