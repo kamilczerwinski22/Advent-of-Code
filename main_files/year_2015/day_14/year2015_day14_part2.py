@@ -20,7 +20,7 @@ import re
 from itertools import cycle
 
 
-def simulate_race(finish_time: int):
+def simulate_race(finish_time: int) -> int:
     # initial variables
     reindeers = dict()  # store each reindeer properties
     helper_dict = dict()  # each reindeer score, cycle iterator, current distance
