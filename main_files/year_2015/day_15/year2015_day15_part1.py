@@ -48,7 +48,7 @@ def calculate_perfect_proportions(total: int) -> int:
     combinations = itertools.combinations(range(total + 1), 3)
     for recipe in combinations:
         print(recipe)
-
+        #TODO algorithm to make combitanions
     return 0
 
 
