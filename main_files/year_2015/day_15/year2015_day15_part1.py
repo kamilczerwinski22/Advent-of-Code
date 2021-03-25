@@ -49,9 +49,18 @@ def calculate_perfect_proportions(total: int) -> int:
     for recipe in combinations:
         print(recipe)
         #TODO algorithm to make combitanions
-        # dunno
     return 0
 
+    def mixtures(n, total):
+        start = total if n == 1 else 0
+
+        for i in range(start, total+1):
+            left = total - i
+            if n-1:
+                for y in mixtures(n-1, left):
+                    yield [i] + y
+            else:
+                yield [i]
 
 if __name__ == '__main__':
     result = calculate_perfect_proportions(5)
