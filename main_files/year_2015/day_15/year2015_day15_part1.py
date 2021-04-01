@@ -31,7 +31,9 @@
 # you can make?
 
 import re
-import itertools
+from operator import mul
+from functools import reduce
+
 
 def calculate_perfect_proportions(total: int) -> int:
     # read file
@@ -39,30 +41,32 @@ def calculate_perfect_proportions(total: int) -> int:
     with open('year2015_day15_challenge_input.txt', 'r', encoding='UTF-8') as f:
         for line in f.read().splitlines():
             ingredient_name, cookie_properties = line.split(':')
-            ingredients[ingredient_name] = list(map(int, re.findall(r'-?\d+', cookie_properties)))
-
-
+            ingredients[ingredient_name] = list(map(int, re.findall(r'-?\d+', cookie_properties)))[:-1]  # skip calories
 
     # main logic - generic solution
     recipe_scores = []
-    combinations = itertools.combinations(range(total + 1), 3)
-    for recipe in combinations:
-        print(recipe)
-        #TODO algorithm to make combitanions
-    return 0
+    for recipe in create_recipes(len(ingredients), total):
+        current_recipe_values = [0] * len(list(ingredients.values())[0])  # num of each ingredient properties (4)
+        for spoons, ing_values in zip(recipe, ingredients.values()):
+            current_properties = [x * spoons for x in ing_values]
+            current_recipe_values = [org + cur for org, cur in zip(current_recipe_values, current_properties)]
+        # check if all values in current_recipe_values are greater than 0, if yes - get product of them, else add 0
+        recipe_scores.append(reduce(mul, current_recipe_values) if all(x > 0 for x in current_recipe_values) else 0)
+    return max(recipe_scores)
 
-    def mixtures(n, total):
-        start = total if n == 1 else 0
 
-        for i in range(start, total+1):
-            left = total - i
-            if n-1:
-                for y in mixtures(n-1, left):
-                    yield [i] + y
-            else:
-                yield [i]
+def create_recipes(n: int, total: int):
+    start = total if n == 1 else 0  # start with 0 if dim > 1
+
+    for i in range(start, total + 1):
+        left_side = total - i  # left side to sum to calculate last element
+        if n - 1 != 0:  # if dim > 1
+            for y in create_recipes(n - 1, left_side):  # if dim > 1 go deeper
+                yield [i] + y
+        else:
+            yield [i]  # return last digit as list
+
 
 if __name__ == '__main__':
-    result = calculate_perfect_proportions(5)
+    result = calculate_perfect_proportions(100)
     print(result)
-
