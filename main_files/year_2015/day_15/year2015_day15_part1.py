@@ -49,7 +49,9 @@ def calculate_perfect_proportions(total: int) -> int:
         current_recipe_values = [0] * len(list(ingredients.values())[0])  # num of each ingredient properties (4)
         for spoons, ing_values in zip(recipe, ingredients.values()):
             current_properties = [x * spoons for x in ing_values]
+            # add current ingredient properties to current recipe properties
             current_recipe_values = [org + cur for org, cur in zip(current_recipe_values, current_properties)]
+
         # check if all values in current_recipe_values are greater than 0, if yes - get product of them, else add 0
         recipe_scores.append(reduce(mul, current_recipe_values) if all(x > 0 for x in current_recipe_values) else 0)
     return max(recipe_scores)
