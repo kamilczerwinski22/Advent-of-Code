@@ -1,7 +1,7 @@
 ### 2016 Advent Calendar coding challenge! 
 *Everyday two new coding challenges until christmas*
 
-Programming language: **Python**
+Programming language: **Python** *3.8*
 
 
 | Days        | Challenge 1           | Challenge 2  |
@@ -9,7 +9,7 @@ Programming language: **Python**
 | 1 | *Completed* | *Completed* |
 | 2 | *Completed* | *Completed* |
 | 3 | *Completed* | *Completed* |
-| 4 |TODO | TODO |
+| 4 |*Completed* | *Completed* |
 | 5 | TODO | TODO |
 | 6 | TODO | TODO |
 | 7 | TODO | TODO |

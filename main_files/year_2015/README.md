@@ -1,7 +1,7 @@
 ### 2015 Advent Calendar coding challenge! 
 *Everyday two new coding challenges until christmas*
 
-Programming language: **Python**
+Programming language: **Python** *3.8*
 
 
 | Days        | Challenge 1           | Challenge 2  |
