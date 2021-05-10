@@ -8,7 +8,7 @@ Programming language: **Python** *3.8*
 | :-------------: |:-------------:| :-----:|
 | 1 | *Completed* | *Completed* |
 | 2 | *Completed* | *Completed* |
-| 3 | TODO | TODO |
+| 3 | *Completed* | *Completed* |
 | 4 |TODO | TODO |
 | 5 | TODO | TODO |
 | 6 | TODO | TODO |
