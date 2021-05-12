@@ -13,7 +13,7 @@ If you haven't joined yet, go ahead, it's a lot of fun! :D
 | [2020](https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/main_files/year_2020) | **12/50** <img src="https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/stars.png" width="20px" height="20px"> |
 | 2019 | **0/50** <img src="https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/stars.png" width="20px" height="20px"> |
 | 2018 | **0/50** <img src="https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/stars.png" width="20px" height="20px"> |
-| [2017](https://github.com/kamilczerwinski22/Advent-of-Code/tree/master/main_files/year_2017) | **0/50** <img src="https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/stars.png" width="20px" height="20px"> |
+| [2017](https://github.com/kamilczerwinski22/Advent-of-Code/tree/master/main_files/year_2017) | **7/50** <img src="https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/stars.png" width="20px" height="20px"> |
 | [2016](https://github.com/kamilczerwinski22/Advent-of-Code/tree/master/main_files/year_2016) | **8/50** <img src="https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/stars.png" width="20px" height="20px"> |
 | [2015](https://github.com/kamilczerwinski22/Advent-of-Code/tree/master/main_files/year_2015) | **40/50** <img src="https://github.com/kamilczerwinski22/Advent-of-Code/blob/master/stars.png" width="20px" height="20px"> |
 
