@@ -3,7 +3,7 @@ In this repository are all the challenges from Advent Of Code. I joined the fun
 in 2020, but I wanted to improve my skills and do challenges from previous years. 
 I did not manage to do all the tasks (I hope this will change).
 Each year has it's own README with all the information needed.
-If you haven't joined yet, go ahead, it's a lot of fun! :D
+If you haven't joined yet, go ahead, it's a lot of fun!  :D
 
 **All the links**
 
