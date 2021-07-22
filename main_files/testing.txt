@@ -1,0 +1,39 @@
+import doctest
+
+
+def solution(A, B):
+    """
+    Simple tests
+
+    >>> solution(10, 21)
+    7
+
+    >>> solution(13, 11)
+    5
+
+    >>> solution(2, 1)
+    0
+
+    >>> solution(1, 8)
+    2
+    """
+    low = 0
+    high = max(A, B) // 2
+
+    while True:
+        guess = (low + high) // 2
+        if guess <= 0:
+            return 0
+
+        if (A // guess) + (B // guess) >= 4:
+            low = guess + 1
+            if low > high:
+                return guess
+        else:
+            high = guess - 1
+
+
+if __name__ == '__main__':
+
+    doctest.testmod(name="solution", verbose=True)
+    # print(solution(2, 1))
